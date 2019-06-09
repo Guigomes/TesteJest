@@ -1,0 +1,73 @@
+{
+  "name": "ExampleProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^16.3.0-alpha.1",
+    "react-native": "0.51.0",
+    "gam-core-api": "^1.9.1",
+    "gam-components": "^2.9.3",
+    "mov-react-native": "0.0.4",
+    "mov-react-native-ui": "0.0.5-rc.8",
+    "mov-rn-ui": "^0.0.21",
+    "rpj-components": "^0.0.7",
+
+    "gst-card-gamcomponent": "0.0.14",
+    "gst-comum-gamcomponent": "^0.0.115",
+    "gst-fiscalizacao-gamcomponent": "1.0.2",
+    "gst-react-components": "^0.0.104",
+    "gst-visitas-gamcomponent": "1.0.9"
+  },
+  "devDependencies": {
+    "react": "^16.3.0-alpha.1",
+    "react-native": "0.51.0",
+    "@types/jest": "^22.2.2",
+    "@types/react": "^16.0.41",
+    "@types/react-native": "^0.51.0",
+    "@types/react-test-renderer": "^16.0.1",
+    "babel-jest": "22.4.3",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-addons-test-utils": "^15.6.2",
+    "react-native-mock": "^0.3.1",
+    "react-native-typescript-transformer": "^1.2.3",
+    "react-test-renderer": "^16.3.0-alpha.1",
+    "ts-jest": "^22.4.2",
+    "typescript": "^2.8.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/",
+      "node_modules/",
+      "<rootDir>/lib/",
+      "<rootDir>/node_modules/(?!react-native)/"
+
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/node_modules/gam-core-api",
+      "<rootDir>/node_modules/gam-components",
+      "<rootDir>/node_modules/mov-react-native",
+      "<rootDir>/node_modules/mov-react-native-screen",
+      "<rootDir>/node_modules/mov-react-ui"
+
+    ],
+
+    "cacheDirectory": ".jest/cache"
+  }
+}
